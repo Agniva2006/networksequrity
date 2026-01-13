@@ -27,4 +27,12 @@ def get_requirements()->List[str]:
         print("requirements.txt file not found")
 
     return requirement_lst
-print(get_requirements())
+
+setup(
+    name="NetworkSecurity",
+    version="0.0.1",
+    author="Agniva Ghosh",
+    author_email="agnivaghosh2006@gmail.com",
+    packages=find_packages(),
+    install_requires=get_requirements()
+)
